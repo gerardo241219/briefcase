@@ -78,7 +78,7 @@ body {
 }
 
 .parallaxContainer__body-description {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-left: 1rem;
     text-align: justify;
 }
@@ -96,5 +96,9 @@ body {
 
     .parallaxContainer__body-title {
         font-size: 3rem;
+    }
+
+    .parallaxContainer__body-description {
+        font-size: 2rem;
     }
 }
