@@ -1,0 +1,100 @@
+:root {
+    --bg: #0F172A;
+    --font-primary: 'Dosis', sans-serif;
+}
+
+html {
+    font-family: var(--font-primary);
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+body {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 0 1rem;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.parallaxContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallaxContainer__body {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    width: 90%;
+    max-width: 768px;
+    padding: 5rem 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+}
+
+.parallaxContainer__body-img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    background-image: url('./images/profile.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxContainer__body-name {
+    font-size: 3rem;
+}
+
+.parallaxContainer__body-title {
+    font-size: 2rem;
+}
+
+.parallaxContainer__body-titleSection {
+    font-size: 3rem;
+    text-align: start;
+}
+
+.parallaxContainer__body-description {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .parallaxContainer__body-img {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    .parallaxContainer__body-name {
+        font-size: 5rem;
+    }
+
+    .parallaxContainer__body-title {
+        font-size: 3rem;
+    }
+}
